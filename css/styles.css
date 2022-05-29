@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 62.5%;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 35rem;
+}
+/** HEADER **/
+
+.header {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.header h1 {
+    font-size: 2.9rem;
+    color: hsl(300, 43%, 22%);
+    line-height: 2.2rem;
+}
+.header p {
+    font-size: 1.2rem;
+    color: hsl(303, 10%, 53%);
+    line-height: 1.5rem;
+}
+
+/** HEADER -END- **/
+
+/** STAR REVIEWS **/
+
+.reviews-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.sm-container {
+    background-color: hsl(334, 30%, 95%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 15px;
+    border-radius: 8px;
+}
+div.stars {
+    display: flex;
+    gap: 8px;
+}
+.text-review p {
+    font-size: 1rem;
+    color: hsl(300, 43%, 22%);
+}
+/** STAR REVIEWS -END- **/
+
+/** VERIFIED BUYERS **/
+
+.verified-buyer {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.buyers {
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 8px;
+    padding: 30px;
+}
+h3 {
+    color: white;
+    font-size: 1.2rem;
+}
+.buyers p {
+    font-size: 1.1rem;
+    color: hsl(333, 80%, 67%);
+}
+.comment p {
+    font-size: 1.1rem;
+    line-height: 1.2rem;
+    color: white;
+}
+
+.buyers img {
+    border-radius: 50%;
+    width: 2.5rem;
+}
+.buyers {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1.5rem;
+}
+.name {
+    display: flex;
+    gap: 0.2rem;
+    flex-direction: column;
+}
+
+/** VERIFIED BUYERS -END- **/

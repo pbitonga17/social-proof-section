@@ -15,7 +15,27 @@ main {
     flex-direction: column;
     gap: 2rem;
     padding: 2rem;
-    max-width: 35rem;
+    max-width: 45rem;
+}
+
+@media screen and (min-width: 1000px) {
+    main {
+        display: grid;
+        grid-template-areas: 
+            'header star'
+            'review review';
+        max-width: 70rem;
+        gap: 5rem;
+    }
+    .header {
+        grid-area: header;
+    }
+    .reviews-container {
+        grid-area: star;
+    }
+    .verified-buyer {
+        grid-area: review;
+    }
 }
 /** HEADER **/
 
@@ -34,6 +54,23 @@ main {
     font-size: 1.2rem;
     color: hsl(303, 10%, 53%);
     line-height: 1.5rem;
+}
+@media screen and (min-width: 1000px) {
+    .header {
+        display: flex;
+        flex-direction: column;
+        gap: 1.3rem;
+        text-align: left;
+        margin-right: 7rem;
+    }
+    .header h1 {
+        font-size: 3.5rem;
+        line-height: normal;
+    }
+    .header p {
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+    }
 }
 
 /** HEADER -END- **/
@@ -61,6 +98,27 @@ div.stars {
 .text-review p {
     font-size: 1rem;
     color: hsl(300, 43%, 22%);
+}
+
+@media screen and (min-width: 1000px) {
+    .sm-container {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        padding: 25px 30px;
+        gap: 1.5rem;
+    }
+    .text-review p {
+        font-size: 1.2rem;
+    }
+    .container2 {
+        position: relative;
+        right: 50px;
+    }
+    .container1 {
+        position: relative;
+        right: 100px;
+    }
 }
 /** STAR REVIEWS -END- **/
 
@@ -106,4 +164,24 @@ h3 {
     flex-direction: column;
 }
 
+@media screen and (min-width: 1000px) {
+    .verified-buyer {
+        display: flex;
+        flex-direction: row;
+    }
+    .comment p {
+        font-size: 1rem;
+    }
+    .buyers {
+        padding: 35px;
+    }
+    .buyer2 {
+        position: relative;
+        top: 15px;
+    }
+    .buyer3 {
+        position: relative;
+        top: 30px;
+    }
+}
 /** VERIFIED BUYERS -END- **/
